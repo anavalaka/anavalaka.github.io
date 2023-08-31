@@ -1,0 +1,27 @@
+//
+// Shadow
+//
+
+.shadow-xs {
+    box-shadow: var(--#{$prefix}box-shadow-xs);
+}
+
+.shadow-sm {
+    box-shadow: var(--#{$prefix}box-shadow-sm);
+}
+
+.shadow {
+    box-shadow: var(--#{$prefix}box-shadow);
+}
+
+.shadow-lg {
+    box-shadow: var(--#{$prefix}box-shadow-lg);
+}
+
+.focus-shadow {
+    &:focus,
+    &:focus-within {
+        box-shadow: 0 0 0 0.25rem rgb(253 13 13 / 25%) !important;
+        outline: none;
+    }
+}
